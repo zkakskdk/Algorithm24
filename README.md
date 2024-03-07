@@ -1,3 +1,3 @@
 # Algorithm24
 
-contents 김지성
+Contents 김지성
