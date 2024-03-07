@@ -1,3 +1,3 @@
 # Algorithm24
 
-contents KimJiSung
+contents 김지성
