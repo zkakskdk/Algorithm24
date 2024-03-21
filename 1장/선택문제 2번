@@ -1,0 +1,21 @@
+# 1장 선택문제 2번 김지성(202110343)
+
+def gcd(a, b):
+    alist = [i for i in range(1, a+1) if a % i == 0]
+    
+    blist = [i for i in range(1, b+1) if b % i == 0]
+    
+    for num in reversed(alist):
+        if num in blist:
+            return num 
+            
+    return 1
+
+a = 60
+b = 28
+result = gcd(a, b)
+divisors_a = [i for i in range(1, a+1) if a % i == 0]
+divisors_b = [i for i in range(1, b+1) if b % i == 0]
+print(f"{a}의 약수 = {divisors_a}")
+print(f"{b}의 약수 = {divisors_b}")
+print(f"{a}와 {b}의 최대 공약수 = {result}")
