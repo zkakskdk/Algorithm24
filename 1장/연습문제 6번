@@ -1,0 +1,8 @@
+# 1장 연습문제 6번 김지성(202110343)
+
+def gcd(a,b) :
+    while b!=b :
+        r <- a % b
+        a <- b
+        b <- r
+    return a
