@@ -1,0 +1,7 @@
+def unique_elements(A) :
+    n = len(A)
+    for i in range(n-1) :
+        for j in range(i+1,n) :
+            if A[i] == A[j] :
+                return False
+    return True
