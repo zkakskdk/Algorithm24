@@ -1,0 +1,28 @@
+12. 알고리즘 3.4를 일차원 공간의 점에 적용하고자 한다. 즉, 각 점은 xi와 같이 x 좌표로만 표시된다. n개의 점이 주어졌을 때 물음에 답하라.
+
+(1) distance() 함수는 어떻게 수정되어야 할까?
+def distance(p1, p2):
+    return abs(p2 - p1)
+(2) 알고리즘 3.4보다 더 효율적인 알고리즘을 설계해 보라.
+def closest_pair(p):
+    n = len(p)
+    p.sort()
+    mindist = float("inf")
+    for i in range(n-1):
+        dist = distance(p[i], p[i+1])
+        if dist < mindist:
+            mindist = dist
+    return mindist
+
+
+
+//알고리즘 3.4
+def closest_pair(p):
+	n = len(p)
+	mindist = float(“inf”)
+	for I in range(n-1):
+		for j in range(n+1, n):
+			dist = distance(p[i], p[j])
+			if dist < mindist:
+				mindist = dist
+	return mindist
