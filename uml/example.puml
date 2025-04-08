@@ -1,0 +1,7 @@
+@startuml
+class Student {
+  - studentId: int
+  - name: String
+  + register(): void
+}
+@enduml
