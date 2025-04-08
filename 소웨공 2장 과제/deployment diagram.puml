@@ -1,0 +1,13 @@
+@startuml Deployment Diagram
+node "Client" {
+  component UI
+}
+
+node "Server" {
+  component API
+  component DB
+}
+
+UI --> API
+API --> DB
+@enduml

@@ -1,0 +1,10 @@
+@startuml Communication Diagram
+object User
+object LoginUI
+object AuthService
+
+User -> LoginUI : 로그인 정보 입력
+LoginUI -> AuthService : 인증 요청
+AuthService -> LoginUI : 인증 결과
+LoginUI -> User : 결과 출력
+@enduml

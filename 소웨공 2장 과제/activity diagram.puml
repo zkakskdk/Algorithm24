@@ -1,0 +1,11 @@
+@startuml Activity Diagram
+start
+:도서 검색;
+if (도서 있음?) then (예)
+  :대출 신청;
+  :대출 완료;
+else (아니오)
+  :종료;
+endif
+stop
+@enduml

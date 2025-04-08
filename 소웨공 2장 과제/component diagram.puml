@@ -1,0 +1,10 @@
+@startuml Component Diagram
+package "Library System" {
+  [UI Module]
+  [Logic Module]
+  [Database Module]
+
+  [UI Module] --> [Logic Module]
+  [Logic Module] --> [Database Module]
+}
+@enduml

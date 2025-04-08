@@ -1,0 +1,11 @@
+@startuml Use Case Diagram
+actor "회원" as User
+actor "관리자" as Admin
+
+User --> (도서 검색)
+User --> (도서 대출)
+User --> (도서 반납)
+
+Admin --> (도서 등록)
+Admin --> (도서 삭제)
+@enduml
