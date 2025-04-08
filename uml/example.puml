@@ -1,7 +1,33 @@
-@startuml
+
+@startuml StudentDiagram
+
 class Student {
   - studentId: int
   - name: String
+  - email: String
   + register(): void
+  + updateInfo(): void
 }
+
+class Course {
+  - courseId: int
+  - title: String
+  + enrollStudent(): void
+}
+
+class Professor {
+  - professorId: int
+  - name: String
+  + assignGrade(): void
+}
+
+class Enrollment {
+  - enrollmentId: int
+  - grade: String
+}
+
+Student "1" --> "*" Enrollment
+Course "1" --> "*" Enrollment
+Professor "1" --> "*" Course
+
 @enduml
